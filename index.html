@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SRI LEELA</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    /* Page-specific styles */
+    .hero {
+      background-image: url('sri6.jpg');
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .gallery-images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-images img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to the World of my Fav Heroine</h1>
+      <h1><i>SRI LEELA.</i><h1>
+    </section>
+    <!-- Other sections can be added here -->
+  </main>
+  <footer>
+    <i>; A beautiful woman delights the eye; a wise woman, the understanding; a pure one, the sou</i>
+  </footer>
+  <script>
+    var images = ['sri7.jpg', 'sri8.jpg', 'sri9.jpg']; // Add paths to your images here
+  var currentImageIndex = 0;
+  var slideshowElement = document.getElementById('slideshow');
+  
+  function nextImage() {
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    slideshowElement.innerHTML = '<img class="heroine-image" src="' + images[currentImageIndex] + '" alt="Heroine Image">';
+  }
+  
+  // Change image every 3 seconds
+  setInterval(nextImage, 3000);
+  </script>
+</body>
+</html>
